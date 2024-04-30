@@ -1,5 +1,5 @@
 {
-  "type": "module", 
+  "type": "module",
   "name": "chat-app",
   "version": "1.0.0",
   "main": "server.js",
@@ -7,7 +7,6 @@
     "server": "nodemon --experimental-modules backend/server.js",
     "dev": "vite"
   },
- 
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,6 +19,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.1",
     "nodemon": "^3.1.0",
+    "react-hot-toast": "^2.4.1",
     "socket.io": "^4.7.5"
   }
 }
