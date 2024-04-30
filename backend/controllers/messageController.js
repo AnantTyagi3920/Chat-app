@@ -50,11 +50,11 @@ export const getMessages = async (req, res) => {
 
     if (!conversation) return res.status(200).json([]);
 
-    const messages = conversation.messages();
+    const messages = conversation.messages;
 
     res.status(200).json(messages);
   } catch (error) {
-    console.log("Error in sendMessage controller", error.message);
+    console.log("Error in getMessages controller: ", error.message);
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
